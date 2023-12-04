@@ -55,7 +55,7 @@ def create_query(user_query, filters=None, sort="_score", sortDir="desc", size=1
                             "type": "phrase",
                             "slop": "6",
                             "minimum_should_match": "2<75%",
-                            # 4. Changde the multi_match to only search the name and shortDescription field.
+                            # 4. Changed the multi_match to only search the name and shortDescription field.
                             "fields": ["name^10", "shortDescription^5"]
                         }
                     }
