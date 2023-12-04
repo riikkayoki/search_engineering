@@ -205,8 +205,7 @@ def main(query_file: str, index_name: str, host: str, max_queries: int):
 
     end = perf_counter()
     logger.info(f"Finished running {len(queries)} queries in {(end - start)/60} minutes")
-    
-    
+
 
 if __name__ == "__main__":
     main()
